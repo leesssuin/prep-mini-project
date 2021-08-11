@@ -13,95 +13,41 @@
     />
     <link rel="icon" href="/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <title>Calendar Project</title>
+    <title>Carousel Project</title>
   </head>
-
   <body>
     <section>
       <div class="image-box">
         <img src="images/vanilla_coding_logo.png" />
       </div>
-      <h1>Calendar</h1>
-
-      <div class="calendar-container">
-        <div class="current-day">
-          <p></p>
-          <p></p>
+      <h1>Carousel</h1>
+      <div class="wrapper">
+        <input type="button" class="prev-button" value="◀️">
+        <div class="image-wrapper">
+          <div id="image">
+            <img src="images/image-1.png">
+          </div>
+          <div id="image" class="none">
+            <img src="images/image-2.png">
+          </div>
+          <div id="image" class="none">
+            <img src="images/image-3.png">
+          </div>
+          <div id="image" class="none">
+            <img src="images/image-4.png">
+          </div>
+          <div id="image" class="none">
+            <img src="images/image-5.png">
+          </div>
         </div>
-        <p class="current-month"></p>
-        <div class="calendar">
-          <table>
-            <thead>
-              <tr>
-                <th>SUN</th>
-                <th>MON</th>
-                <th>TUE</th>
-                <th>WED</th>
-                <th>THU</th>
-                <th>FRI</th>
-                <th>SAT</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-          <button class="button prev"><<</button>
-          <button class="button next">>></button>
-        </div>
+        <input type="button" class="next-button" value="▶️">
+      </div>
+      <div class="dot-wrapper">
+        <input type="button" class="dot" onclick="">
+        <input type="button" class="dot" onclick="">
+        <input type="button" class="dot" onclick="">
+        <input type="button" class="dot" onclick="">
+        <input type="button" class="dot" onclick="">
       </div>
     </section>
 

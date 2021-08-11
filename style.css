@@ -1,5 +1,4 @@
 body {
-  background-color: lightblue;
   background-image: url("./images/bg.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -12,60 +11,55 @@ h1 {
   font-size: 72px;
 }
 
-.image-box {
+.wrapper {
   display: flex;
-  justify-content: center;
+  margin: 30px;
   align-items: center;
-  margin-top: 50px;
-}
-
-.image-box img {
-  width: 150px;
-}
-
-.current-day {
-  font-weight: bold;
-  text-align: center;
-  font-size: 48px;
-}
-
-.current-day p {
-  margin: 20px 0;
-}
-
-.current-month {
-  text-align: center;
-  margin: 50px auto -20px;
-  font-size: 24px;
-}
-
-.calendar {
-  position: relative;
-  width: 270px;
-  margin: 0 auto;
-}
-
-table {
-  margin: 50px auto 0;
-  text-align: center;
+  justify-content: space-evenly;
 }
 
 .button {
-  position: absolute;
-  top: 50%;
-  margin-top: -20px;
+  display: flex;
+  height: 100px;
   width: 100px;
-  height: 40px;
-  font-size: 20px;
-  line-height: 40px;
-  background: none;
-  border: none;
+  justify-content: center;
+  margin: 30px;
+  padding: 0;
+  border-radius: 100%;
 }
 
-.button.prev {
-  left: -100px;
+.prev-button .next-button{
+  width: 100px;
+  height: 100px;
+  font-size: 90px;
+  border-radius: 100%;
+  margin: 10px;
+  padding: 5px;
 }
 
-.button.next {
-  right: -100px;
+.image-warpper{
+  display: flex;
+  width: 600px;
+  height: 600px;
+  margin: 10px;
+}
+
+#image {
+  width: 600px;
+  height: 600px;
+  margin: 30px;
+}
+
+.dot-wrapper {
+  text-align: center;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 100%;
+  margin: 15px;
+}
+.none {
+  display: none;
 }
