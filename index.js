@@ -1,7 +1,7 @@
 const $images = document.querySelectorAll("#image");
 const $prevButton = document.querySelector(".prev-button");
 const $nextButton = document.querySelector(".next-button");
-const $dots = document.querySelectorAll(".dot");
+const $dots = document.querySelector(".dot-wrapper");
 
 const COUNT_IMAGE = $images.length - 1
 let i = 0;
@@ -35,3 +35,15 @@ function prev(e) {
   }
 }
 $prevButton.addEventListener("click", prev);
+
+$dots.addEventListener("click", function(e) {
+  if(e.target.className != "dot")
+  return;
+
+  for(let i = 0; i < $images.length; i++) {
+    $images[i].classList.add("none");
+  }
+
+  number = e.target.id;
+  $images[number].classList.remove("none");
+});
